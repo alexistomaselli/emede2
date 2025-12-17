@@ -50,6 +50,16 @@ echo "Global Settings initialized.<br>";
 // Insert Pages with Templates
 // We seed the content as JSON where applicable for structured fields
 
+// 0. Inicio (Start Template)
+$start_content = json_encode([
+    'hero_title' => 'Más de 45 años <span class="highlight">imprimiendo confianza</span>',
+    'hero_desc' => 'Somos el aliado gráfico de tu proyecto. Especialistas en packaging y soluciones impresas de alta calidad.',
+    'hero_cta' => 'Cotizar',
+    'hero_image' => 'extracted_assets/image_p2_0.png'
+]);
+$db->prepare("INSERT INTO pages (slug, title, template, content, in_menu, menu_order) VALUES (?, ?, ?, ?, 0, 0)") // in_menu=0 for home usually, or 1? Let's say 0 if logo links there, but user might want it. Let's set 0 as it's the root.
+    ->execute(['inicio', 'Inicio', 'start', $start_content]);
+
 // 1. Trayectoria (About Template)
 // Structure: { "history_title": "", "history_text": "", "mission_title": "", "mission_text": "", "image_url": "" }
 $about_content = json_encode([
