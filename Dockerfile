@@ -15,11 +15,11 @@ WORKDIR /var/www/html
 COPY . /var/www/html/
 
 # Create necessary directories if they don't exist and set permissions
-# We need to ensure 'uploads' and the directory for 'database.sqlite' (root) are writable
-RUN mkdir -p /var/www/html/uploads \
+# We need to ensure 'uploads' and 'data' are writable
+RUN mkdir -p /var/www/html/uploads /var/www/html/data \
     && chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html \
-    && chmod -R 775 /var/www/html/uploads
+    && chmod -R 775 /var/www/html/uploads /var/www/html/data
 
 # Expose port 80
 EXPOSE 80
