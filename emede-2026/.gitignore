@@ -1,0 +1,20 @@
+# Media and uploads
+website/media/
+
+# Database
+website/db/database.sqlite
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Seeds / Temp scripts
+website/db/seed_*.php
+*.py
+!website/media/.gitkeep

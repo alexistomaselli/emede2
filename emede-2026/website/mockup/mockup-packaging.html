@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Gráfica Emede | Packaging</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e3a8a",
+                        secondary: "#3b82f6",
+                        accent: "#3b82f6",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f172a",
+                        "navy-dark": "#0a192f",
+                        "navy-deep": "#051124",
+                    },
+                    fontFamily: {
+                        display: ["Outfit", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-link {
+            @apply text-[15px] font-medium text-slate-600 hover:text-accent transition-colors;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .stat-card-blue {
+            @apply bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm transition-all hover:shadow-md;
+        }
+        .blue-wave-pattern {
+            background-image: radial-gradient(#3b82f6 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.1;
+        }
+        .watermark-text {
+            @apply absolute top-0 left-0 text-white/5 text-8xl font-black uppercase pointer-events-none select-none -translate-y-4;
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200">
+    <header class="sticky top-0 left-0 w-full z-50 bg-white border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-slate-900 tracking-tight">Gráfica Emede.</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+                <a class="nav-link" href="#">Inicio</a>
+                <a class="nav-link" href="#">Home 2</a>
+                <a class="nav-link" href="#">Trayectoria</a>
+                <a class="nav-link" href="#">Packaging</a>
+                <a class="nav-link" href="#">Posavasos</a>
+                <a class="nav-link" href="#">Comercial</a>
+                <a class="nav-link" href="#">Galería</a>
+            </nav>
+            <div class="flex items-center">
+                <a class="bg-accent hover:bg-blue-600 text-white px-8 py-2.5 rounded-full font-semibold transition-all shadow-md"
+                    href="#">
+                    Cotizar
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="relative h-[450px] flex items-center hero-section">
+        <div class="max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tight">
+                ESTUCHES QUE POTENCIAN Y PROTEGEN TUS PRODUCTOS.
+            </h1>
+            <div
+                class="bg-black/50 backdrop-blur-md px-10 py-6 rounded text-white text-sm font-bold tracking-widest flex items-center gap-3">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">home</span>
+                    <a class="hover:text-accent transition-colors" href="#">HOME</a>
+                </div>
+                <span class="text-white">○</span>
+                <span class="text-white border-b border-white pb-0.5">PACKAGING</span>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-0.5 bg-accent"></div>
+                        <span class="text-accent font-bold tracking-wider text-sm uppercase">+45 AÑOS DE
+                            EXPERIENCIA</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight">
+                        Somos el aliado gráfico de tu proyecto
+                    </h2>
+                </div>
+                <div class="pt-2 lg:pt-14">
+                    <p class="text-lg text-slate-500 dark:text-slate-400 leading-relaxed font-normal">
+                        En Gráfica Emede entendemos que el packaging es el primer contacto físico entre tu
+                        producto y el consumidor, siendo una herramienta clave en comunicar valor para tu marca.
+                        Somos una empresa referente en la fabricación de packaging sobre cartulina, brindando
+                        tecnología y profesionalismo en productos para la industria argentina.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="aspect-square rounded-2xl overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
+                    <img alt="Pharmaceutical packaging boxes"
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD573xwkZPERcEuYAsMKSIiFNJvjw2GYwqCoi-KtCBfKpPNMwyVRmHiImGkzJkrvdeer-0XcIRT8jOku89N-ioRvHudTdOfjmfO5CLjF5-WNjqXFeJhZ7BLpQf2fv47t_CjFZ4WL3g2UtpgkhbUGgmAyK42ENJ62TtGmmD2FkuCrrlKXoG1-E8keIL10xoo9I5CfC0DGHlmiWpibBQD5u4V0tZUgCem4liQnPiFIGkSL-Hc6IHASq1PlwJHn8TRgd58HXdrBakkEw6Y" />
+                </div>
+                <div
+                    class="aspect-square rounded-2xl overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
+                    <img alt="Gin Heredero drink coasters"
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlqpRLtu1uDEthVvFTtL0TlUlKWENga2E7Hn6IpNsPyycga3g_ag5kpokjoVdzKi_ka1F8Sk1tMHf_r0_zw3ukZKJliD7ak0BQMCNf84bm4Jdn3iX9rOnzzruvPLV8BALkJ8StjYn5yRfyxrP_UZojNxtyMoYtsZxVU82G4hVsOBr2GtNEllPKc3uDEHehSlT2xX-ljW02pmNEyaEB-RTokVSleOO4tulLceBOojsFHZ-0hbCFHxdtu62Aj7K87Nh40E-ZDeAdQfJP" />
+                </div>
+                <div
+                    class="aspect-square rounded-2xl overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
+                    <img alt="Commercial printed materials Cabrales"
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQRQYTvEl5BIKzaXCi2IEHf0L26AhCFaA5OrGiZDiO8rYVFSSCA-9RODYK_IhNJckceBjQRnNQl2J9ZiP2l33676niCxFojxqN4WvYyV49W1Zt4wiLBTsjXH4rZN7myn5qwo7NRFsk6P-V_Rc_c8djiq5g0gI2tQC9eqGzis6mCqsApj9aIlFlo6ChB_cmX06AogrW4TNoPCxHdJwhRtx4Hs-DN8b2Y1wEVudNpzbkMMqw8Esvr1MjMmWY9gVOsJaqFBgPVIWoa2gI" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col lg:flex-row w-full min-h-[600px]">
+        <div class="lg:w-1/2 w-full h-[400px] lg:h-auto">
+            <img alt="Profesional trabajando" class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqnCL79ihlXvhgLkB7fMmYjdL8A6h7lQMtPYYpzAmkZ6x4CYpA7kzQoBr4XWexkZ4BntCfYt0265CXwUTHW8KjWaM6O3c_aGD5j6SRDMe5-xnXnYQAB_Zwnrxh2sYNy2zDr8lZcBeqqParmXcGbSnYspY6FkBkHjVC0SzfgDh0Axpj-BTiXBa2KgX7LnNkJKCsrOSO9JE5hTyQX8ZX-B-HehAyM8fPQOpaLqEraYufUqmfQJQsPPs6hOgpsDyF7_ai71N3gsq9P2Xk" />
+        </div>
+        <div class="lg:w-1/2 w-full flex flex-col">
+            <div class="flex-1 bg-navy-deep p-12 lg:p-20 relative overflow-hidden flex flex-col justify-center">
+                <span class="watermark-text">Asesoría</span>
+                <div class="relative z-10">
+                    <h3 class="text-3xl font-bold text-white mb-6">Asesoría</h3>
+                    <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-xl">
+                        Acompañamos a nuestros clientes en el desarrollo de piezas impresas con calidad, estética
+                        y eficiencia en la maquinabilidad. Empresas farmacéuticas, de cosmética y alimenticias son
+                        nuestras principales aliadas.
+                    </p>
+                    <a class="inline-flex items-center gap-2 bg-white text-navy-deep px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition-all group"
+                        href="#">
+                        Saber más
+                        <span
+                            class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 bg-navy-dark p-12 lg:p-20 relative overflow-hidden flex flex-col justify-center">
+                <span class="watermark-text">Análisis Estructural</span>
+                <div class="relative z-10">
+                    <h3 class="text-3xl font-bold text-white mb-6">Análisis Estructural</h3>
+                    <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-xl">
+                        Nuestro Departamento de Preprensa analiza la viabilidad estructural del estuche a fabricar,
+                        garantizando soluciones para que el packaging proteja, optimice costos y mejore la
+                        experiencia del cliente desde el primer contacto con el producto.
+                    </p>
+                    <a class="inline-flex items-center gap-2 bg-white text-navy-dark px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition-all group"
+                        href="#">
+                        Saber más
+                        <span
+                            class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-slate-50 dark:bg-slate-900/30 border-y border-slate-100 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div
+                class="flex flex-wrap items-center justify-center gap-12 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 border-2 border-slate-300 dark:border-slate-700 rounded-full flex items-center justify-center">
+                        <span
+                            class="text-slate-800 dark:text-slate-400 font-bold text-xs text-center px-2 uppercase tracking-tighter">Special<br />Quality</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="relative w-24 h-24 flex items-center justify-center">
+                        <div
+                            class="absolute inset-0 border-t-2 border-b-2 border-slate-400 dark:border-slate-600 rounded-[50%] rotate-12">
+                        </div>
+                        <span
+                            class="text-slate-800 dark:text-slate-400 font-bold text-sm uppercase italic">Graphic</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 border-2 border-slate-300 dark:border-slate-700 rounded-lg flex items-center justify-center relative">
+                        <div class="absolute -top-2 left-1/2 -translate-x-1/2 bg-slate-50 dark:bg-slate-900 px-1">
+                            <span class="material-symbols-outlined text-xs">mountain_flag</span>
+                        </div>
+                        <span
+                            class="text-slate-800 dark:text-slate-400 font-black text-sm uppercase tracking-widest">Unique</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 border-4 border-double border-slate-400 dark:border-slate-600 rounded-full flex items-center justify-center flex-col">
+                        <span class="material-symbols-outlined text-sm">star</span>
+                        <span class="text-slate-800 dark:text-slate-400 font-bold text-[10px] uppercase">Premium</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 flex items-center justify-center relative">
+                        <div class="absolute inset-0 border border-slate-300 dark:border-slate-700 rotate-45"></div>
+                        <span class="text-slate-800 dark:text-slate-400 font-bold text-xs uppercase z-10">Label</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 rounded-full border border-dashed border-slate-400 dark:border-slate-600 flex items-center justify-center">
+                        <span
+                            class="text-slate-800 dark:text-slate-400 font-medium text-xs uppercase tracking-widest">Crafted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <div class="lg:col-span-5 flex flex-col items-start">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-0.5 bg-secondary"></div>
+                        <span class="text-secondary font-bold tracking-widest text-sm uppercase">FAQ</span>
+                    </div>
+                    <h2 class="text-4xl lg:text-[48px] font-bold text-slate-900 dark:text-white leading-tight mb-8">
+                        Preguntas frecuentes
+                    </h2>
+                    <a class="bg-secondary hover:bg-blue-600 text-white px-10 py-4 rounded font-bold transition-all shadow-md"
+                        href="#">
+                        Ver todas
+                    </a>
+                </div>
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="border-b border-slate-100 dark:border-slate-800 pb-4">
+                        <button class="w-full flex justify-between items-center text-left group">
+                            <span
+                                class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-secondary transition-colors">¿Qué
+                                controles previos ejercen antes de la fabricación de un estuche?</span>
+                            <span
+                                class="material-symbols-outlined text-slate-400 group-hover:text-secondary transition-colors">expand_more</span>
+                        </button>
+                        <div class="mt-4 text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Realizamos un análisis estructural vía software de cada archivo recepcionado. Se auditan
+                            distintas variables tabuladas y las mismas se validan con el cliente antes de la impresión.
+                            Garantizamos la confidencialidad y seguridad de la información y el diseño que se nos
+                            proporciona.
+                        </div>
+                    </div>
+                    <div class="border-b border-slate-100 dark:border-slate-800 pb-4">
+                        <button class="w-full flex justify-between items-center text-left group">
+                            <span
+                                class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-secondary transition-colors">¿Realizan
+                                mediciones de color en pie de máquina?</span>
+                            <span
+                                class="material-symbols-outlined text-slate-400 group-hover:text-secondary transition-colors">expand_more</span>
+                        </button>
+                        <div class="mt-4 text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Sí, con coordenadas lab mediante el uso de espectrofotómetro.
+                        </div>
+                    </div>
+                    <div class="border-b border-slate-100 dark:border-slate-800 pb-4">
+                        <button class="w-full flex justify-between items-center text-left group">
+                            <span
+                                class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-secondary transition-colors">¿Qué
+                                prácticas sostenibles implementan en su proceso de producción?</span>
+                            <span
+                                class="material-symbols-outlined text-slate-400 group-hover:text-secondary transition-colors">expand_more</span>
+                        </button>
+                        <div class="mt-4 text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Utilizamos tinta con bajo contenido en plomo y adquirimos de nuestros proveedores
+                            cartulinas que cuenten con certificación FSC.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white text-sm">print</span>
+                        </div>
+                        <span class="text-xl font-bold">Gráfica Emede</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Comprometidos con la excelencia en packaging y servicios gráficos industriales desde hace más de
+                        4 décadas.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-base">social_leaderboard</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-base">photo_camera</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-base">mail</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Empresa</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a class="hover:text-white transition-colors" href="#">Sobre Nosotros</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Nuestra Planta</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Maquinaria</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Sustentabilidad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Servicios</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a class="hover:text-white transition-colors" href="#">Estuches</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Prospectos</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Exhibidores</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Cajas Microcorrugado</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Contacto</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex gap-3">
+                            <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                            Av. Industrial 1234, CABA, Argentina
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="material-symbols-outlined text-primary text-sm">phone</span>
+                            +54 (11) 4567-8901
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="material-symbols-outlined text-primary text-sm">email</span>
+                            info@graficaemede.com.ar
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
+                <p>© 2023 Gráfica Emede S.A. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-white" href="#">Política de Privacidad</a>
+                    <a class="hover:text-white" href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

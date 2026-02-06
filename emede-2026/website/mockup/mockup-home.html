@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Gráfica Emede | Especialistas en Packaging</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e3a8a",
+                        secondary: "#3b82f6",
+                        accent: "#3b82f6",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f172a",
+                        "navy-dark": "#0a192f",
+                    },
+                    fontFamily: {
+                        display: ["Outfit", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .curve-divider {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white;
+            clip-path: ellipse(70% 100% at 50% 100%);
+        }
+        .dark .curve-divider {
+            background: #0f172a;
+        }
+        .nav-link {
+            @apply text-[15px] font-medium text-slate-600 hover:text-accent transition-colors;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .testimonial-card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200">
+    <header class="sticky top-0 left-0 w-full z-50 bg-white border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-slate-900 tracking-tight">Gráfica Emede.</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+                <a class="nav-link" href="#">Inicio</a>
+                <a class="nav-link" href="#">Trayectoria</a>
+                <a class="nav-link" href="#">Packaging</a>
+                <a class="nav-link" href="#">Posavasos</a>
+                <a class="nav-link" href="#">Comercial</a>
+                <a class="nav-link" href="#">Galería</a>
+            </nav>
+            <div class="flex items-center">
+                <a class="bg-accent hover:bg-blue-600 text-white px-8 py-2.5 rounded-full font-semibold transition-all shadow-md"
+                    href="#">
+                    Cotizar
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="relative h-[80vh] flex items-center justify-center hero-gradient overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Especialistas en <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white">Packaging</span>
+            </h1>
+            <p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Más de 45 años transformando ideas en soluciones gráficas de alta calidad para las industrias más
+                exigentes.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a class="px-8 py-4 bg-primary text-white font-bold rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg flex items-center gap-2"
+                    href="#">
+                    Cotizar <span class="material-symbols-outlined">chevron_right</span>
+                </a>
+                <a class="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-primary transition-all flex items-center gap-2"
+                    href="#">
+                    <span class="material-symbols-outlined">play_circle</span> Ver Proceso
+                </a>
+            </div>
+        </div>
+        <div class="curve-divider"></div>
+    </section>
+    <section class="py-24 bg-white dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16">
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-0.5 bg-accent"></div>
+                        <span class="text-accent font-bold tracking-wider text-sm uppercase">+45 AÑOS DE
+                            EXPERIENCIA</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight">
+                        Somos el aliado gráfico de tu proyecto
+                    </h2>
+                </div>
+                <div class="pt-2 lg:pt-14">
+                    <p class="text-lg text-slate-500 dark:text-slate-400 leading-relaxed font-normal">
+                        Nos enorgullece ser parte de la historia en cada uno de los proyectos que se nos confía,
+                        demostrando nuestro compromiso con la excelencia, la innovación y una marcada atención
+                        personalizada.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="aspect-square rounded-2xl overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
+                    <img alt="Pharmaceutical packaging boxes"
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD573xwkZPERcEuYAsMKSIiFNJvjw2GYwqCoi-KtCBfKpPNMwyVRmHiImGkzJkrvdeer-0XcIRT8jOku89N-ioRvHudTdOfjmfO5CLjF5-WNjqXFeJhZ7BLpQf2fv47t_CjFZ4WL3g2UtpgkhbUGgmAyK42ENJ62TtGmmD2FkuCrrlKXoG1-E8keIL10xoo9I5CfC0DGHlmiWpibBQD5u4V0tZUgCem4liQnPiFIGkSL-Hc6IHASq1PlwJHn8TRgd58HXdrBakkEw6Y" />
+                </div>
+                <div
+                    class="aspect-square rounded-2xl overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
+                    <img alt="Gin Heredero drink coasters"
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlqpRLtu1uDEthVvFTtL0TlUlKWENga2E7Hn6IpNsPyycga3g_ag5kpokjoVdzKi_ka1F8Sk1tMHf_r0_zw3ukZKJliD7ak0BQMCNf84bm4Jdn3iX9rOnzzruvPLV8BALkJ8StjYn5yRfyxrP_UZojNxtyMoYtsZxVU82G4hVsOBr2GtNEllPKc3uDEHehSlT2xX-ljW02pmNEyaEB-RTokVSleOO4tulLceBOojsFHZ-0hbCFHxdtu62Aj7K87Nh40E-ZDeAdQfJP" />
+                </div>
+                <div
+                    class="aspect-square rounded-2xl overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
+                    <img alt="Commercial printed materials Cabrales"
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQRQYTvEl5BIKzaXCi2IEHf0L26AhCFaA5OrGiZDiO8rYVFSSCA-9RODYK_IhNJckceBjQRnNQl2J9ZiP2l33676niCxFojxqN4WvYyV49W1Zt4wiLBTsjXH4rZN7myn5qwo7NRFsk6P-V_Rc_c8djiq5g0gI2tQC9eqGzis6mCqsApj9aIlFlo6ChB_cmX06AogrW4TNoPCxHdJwhRtx4Hs-DN8b2Y1wEVudNpzbkMMqw8Esvr1MjMmWY9gVOsJaqFBgPVIWoa2gI" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-slate-50 dark:bg-slate-900/30 border-y border-slate-100 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div
+                class="flex flex-wrap items-center justify-center gap-12 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 border-2 border-slate-300 dark:border-slate-700 rounded-full flex items-center justify-center">
+                        <span
+                            class="text-slate-800 dark:text-slate-400 font-bold text-xs text-center px-2 uppercase tracking-tighter">Special<br />Quality</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="relative w-24 h-24 flex items-center justify-center">
+                        <div
+                            class="absolute inset-0 border-t-2 border-b-2 border-slate-400 dark:border-slate-600 rounded-[50%] rotate-12">
+                        </div>
+                        <span
+                            class="text-slate-800 dark:text-slate-400 font-bold text-sm uppercase italic">Graphic</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 border-2 border-slate-300 dark:border-slate-700 rounded-lg flex items-center justify-center relative">
+                        <div class="absolute -top-2 left-1/2 -translate-x-1/2 bg-slate-50 dark:bg-slate-900 px-1">
+                            <span class="material-symbols-outlined text-xs">mountain_flag</span>
+                        </div>
+                        <span
+                            class="text-slate-800 dark:text-slate-400 font-black text-sm uppercase tracking-widest">Unique</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 border-4 border-double border-slate-400 dark:border-slate-600 rounded-full flex items-center justify-center flex-col">
+                        <span class="material-symbols-outlined text-sm">star</span>
+                        <span class="text-slate-800 dark:text-slate-400 font-bold text-[10px] uppercase">Premium</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 flex items-center justify-center relative">
+                        <div class="absolute inset-0 border border-slate-300 dark:border-slate-700 rotate-45"></div>
+                        <span class="text-slate-800 dark:text-slate-400 font-bold text-xs uppercase z-10">Label</span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-24 h-24 rounded-full border border-dashed border-slate-400 dark:border-slate-600 flex items-center justify-center">
+                        <span
+                            class="text-slate-800 dark:text-slate-400 font-medium text-xs uppercase tracking-widest">Crafted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-background-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-0.5 bg-accent"></div>
+                        <span class="text-accent font-bold tracking-widest text-sm uppercase">WORKS ABOUT</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8">Sobre nuestra gráfica
+                    </h2>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-accent text-sm font-bold"
+                                    style="font-variation-settings: 'wght' 700;">check</span>
+                            </div>
+                            <span class="text-slate-600 dark:text-slate-400 font-medium">27.000.000 estuches fabricados
+                                por año</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-accent text-sm font-bold"
+                                    style="font-variation-settings: 'wght' 700;">check</span>
+                            </div>
+                            <span class="text-slate-600 dark:text-slate-400 font-medium">25 profesionales a disposición
+                                de nuestros clientes</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-accent text-sm font-bold"
+                                    style="font-variation-settings: 'wght' 700;">check</span>
+                            </div>
+                            <span class="text-slate-600 dark:text-slate-400 font-medium">Norma ISO 9001:2015</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-accent text-sm font-bold"
+                                    style="font-variation-settings: 'wght' 700;">check</span>
+                            </div>
+                            <span class="text-slate-600 dark:text-slate-400 font-medium">Utilización de tintas con bajos
+                                niveles de plomo</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div
+                                class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-accent text-sm font-bold"
+                                    style="font-variation-settings: 'wght' 700;">check</span>
+                            </div>
+                            <span class="text-slate-600 dark:text-slate-400 font-medium">+450 clientes
+                                satisfechos</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <img alt="Personal profesional en estación de control de impresión"
+                            class="rounded-2xl shadow-2xl w-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1eDGsTqtby46B9QWUyMlJGxwaTUnXfDNvuewVlt12ab0pS2s58X6LQsJLZniiYYqjUcCCM6cZ1pmL_qfobwaYKFrFArfR4cfaShPiHAGfSGlO2BhpFXdNVQ1K2FN1cwTXf1w5HvWqsJwEBfAOATN0Ybxadkl6MVHK5FsX6AIVSUFGT_ZBfzFAdmtWIkasqcrvHPwW21nf4C_QLbB_hkeu5nePy9M3UR2GdxMcHx3uZScRMcFMveAosWIeyhGM19b1jU70I-7apyJ3" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-primary text-white" id="certificaciones">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 mb-4 flex items-center justify-center bg-white/10 rounded-full">
+                        <span class="material-symbols-outlined text-5xl">verified</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1">ISO 9001</h3>
+                    <p class="text-blue-200">Certificación de Calidad</p>
+                </div>
+                <div class="hidden md:block w-px h-24 bg-white/20"></div>
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 mb-4 flex items-center justify-center bg-white/10 rounded-full">
+                        <span class="material-symbols-outlined text-5xl">history</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1">+45 Años</h3>
+                    <p class="text-blue-200">De Trayectoria</p>
+                </div>
+                <div class="hidden md:block w-px h-24 bg-white/20"></div>
+                <div class="flex flex-col items-center">
+                    <div class="w-24 h-24 mb-4 flex items-center justify-center bg-white/10 rounded-full">
+                        <span class="material-symbols-outlined text-5xl">inventory_2</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1">Stock Propio</h3>
+                    <p class="text-blue-200">Entrega Inmediata</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-background-dark overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20 flex flex-col items-center">
+                <span class="text-accent font-bold tracking-[0.2em] text-sm uppercase mb-3">TESTIMONIALS</span>
+                <h2 class="text-4xl font-bold text-slate-900 dark:text-white mb-4">Lo que dicen nuestros clientes</h2>
+                <div class="w-12 h-[3px] bg-accent rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="relative">
+                    <div
+                        class="absolute inset-0 bg-blue-50/50 dark:bg-blue-900/10 translate-x-3 translate-y-3 rounded-xl -z-10">
+                    </div>
+                    <div
+                        class="bg-white dark:bg-slate-800 p-10 md:p-12 rounded-xl testimonial-card-shadow flex flex-col items-center text-center md:items-start md:text-left gap-8 border border-slate-50 dark:border-slate-700">
+                        <div class="relative flex-shrink-0">
+                            <div
+                                class="w-28 h-28 rounded-full overflow-hidden border-4 border-white dark:border-slate-700 shadow-sm">
+                                <img alt="Eliana Paesani" class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGpsXiJH1wRC5QYnIOfDDn4Z0xrjUDpy_JAOZO_FaS62cbSVJ1iuCZC4Vuq6IkOAzcKO4yL6WFlUE_sJ3XcHWq3RCQA3buCDnFZz1GbUwBBga_RSdhzT1_TrZJUrbz5hgytPIQUSyp1rC3xQuZCu9WBfC14fiUJAwE_x393HelN0FjB2K92a4qWeQEHvdPuxo0rdufElEw5KuAdN-4_w7H6Xb3PgqUkOWdx-_p1RWPTQO7BKBa2F96lQYRZxc3Ac39RGVBxxih8hj2" />
+                            </div>
+                            <div
+                                class="absolute bottom-0 right-0 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white shadow-md">
+                                <span class="material-symbols-outlined !text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="text-lg italic text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                                "Muy profesionales. Atentos al detalle de cada impresión""
+                            </p>
+                            <div class="flex justify-center md:justify-start gap-1 mb-4">
+                                <span class="material-symbols-outlined text-yellow-400 !text-[20px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-yellow-400 !text-[20px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-yellow-400 !text-[20px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-yellow-400 !text-[20px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-yellow-400 !text-[20px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-lg">María Eugenia Vigna <span
+                                    class="font-normal text-slate-400 mx-1">/</span> <span
+                                    class="text-sm font-normal text-slate-500">Laboratorio Merlino</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute inset-0 bg-blue-50/50 dark:bg-blue-900/10 translate-x-3 translate-y-3 rounded-xl -z-10">
+                    </div>
+                    <div
+                        class="bg-white dark:bg-slate-800 p-10 md:p-12 rounded-xl testimonial-card-shadow flex flex-col items-center text-center md:items-start md:text-left gap-8 border border-slate-50 dark:border-slate-700">
+                        <div class="relative flex-shrink-0">
+                            <div
+                                class="w-28 h-28 rounded-full overflow-hidden border-4 border-white dark:border-slate-700 shadow-sm">
+                                <img alt="Paula Oliveros" class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGurWSq83_79u9Iq960EwSzvftW1gBjI9r22qEIA7eQFuAqSE04_xcOC8mzusMQpVnK1AbPwHoCv_jMo7td8T-vVo-tpKqMgETDT1j24Pi4GSabZ0CbtZxWkZn3ExdscKgJuo2rtoi3JrrrPCytiUV7o6nKpSDhoUwkd7VhM-UBnm3qIAur1Og7Yli6CjWiWjLh8IM528BueMuaMLDsmLF8kBq-V3RkF-B3zOaJVcvY1KEy5Ur1tiQaj3DZR68LRrF-St9yhl6OTxy" />
+                            </div>
+                            <div
+                                class="absolute bottom-0 right-0 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white shadow-md">
+                                <span class="material-symbols-outlined !text-[18px]"
+                                    style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="text-lg italic text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+                                "Desde el primer contacto, la atención fue muy buena. Son super prolijos y
+                                responsables para trabajar. Los pedidos que fueron planificados cumplieron con los
+                                plazos de entrega. Siempre que tuvimos dudas sobre los gramajes de los papeles
+                                nos ayudaron a elegir lo mejor que se adaptaba a nuestra necesidad. Excelente
+                                desde la calidad humana, hasta el producto. ¡Súper recomendados!"
+                            </p>
+                            <div class="flex justify-center md:justify-start gap-1 mb-4">
+                                <span class="material-symbols-outlined text-yellow-400 !text-[20px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-yellow-400 !text-[20px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-yellow-400 !text-[20px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-yellow-400 !text-[20px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-yellow-400 !text-[20px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-lg">Florencia
+                                Crivella <span class="font-normal text-slate-400 mx-1">/</span> <span
+                                    class="text-sm font-normal text-slate-500">Silvetex</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center gap-2 mt-12">
+                <div class="w-2.5 h-2.5 rounded-full bg-accent"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-[#f1f5f9] dark:bg-slate-900/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="text-[40px] font-bold text-slate-900 dark:text-white mb-2">Need Help?</h2>
+                    <p class="text-slate-500 dark:text-slate-400 mb-10 text-lg">Reach out to the world's most reliable
+                        nuestros servicios gráficos.</p>
+                    <form action="#" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input
+                                class="w-full px-5 py-4 bg-white dark:bg-slate-800 border-none rounded-lg focus:ring-2 focus:ring-accent shadow-sm"
+                                placeholder="Name" type="text" />
+                            <input
+                                class="w-full px-5 py-4 bg-white dark:bg-slate-800 border-none rounded-lg focus:ring-2 focus:ring-accent shadow-sm"
+                                placeholder="Email*" type="email" />
+                        </div>
+                        <input
+                            class="w-full px-5 py-4 bg-white dark:bg-slate-800 border-none rounded-lg focus:ring-2 focus:ring-accent shadow-sm"
+                            placeholder="Phone" type="tel" />
+                        <textarea
+                            class="w-full px-5 py-4 bg-white dark:bg-slate-800 border-none rounded-lg focus:ring-2 focus:ring-accent shadow-sm"
+                            placeholder="Please describe what you need. *" rows="6"></textarea>
+                        <button
+                            class="bg-accent hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-bold transition-all shadow-lg text-sm"
+                            type="submit">
+                            Get a free consultation
+                        </button>
+                    </form>
+                </div>
+                <div class="lg:pt-4">
+                    <div class="flex items-center gap-8 mb-10 border-b border-slate-200 dark:border-slate-700">
+                        <button
+                            class="pb-4 text-[32px] font-bold text-accent border-b-[3px] border-accent">Address</button>
+                        <button
+                            class="pb-4 text-[32px] font-bold text-slate-400 dark:text-slate-500 hover:text-slate-600 transition-colors">Google
+                            Maps</button>
+                    </div>
+                    <div class="space-y-10">
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-20 h-20 bg-white dark:bg-slate-800 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] shadow-xl shadow-blue-100/20 flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-accent text-3xl"
+                                    style="font-variation-settings: 'FILL' 1;">location_on</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-1">OUR
+                                    LOCATION</h5>
+                                <p class="text-slate-500 dark:text-slate-400 text-lg">Av. Industrial 1234, CABA,
+                                    Argentina</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-20 h-20 bg-white dark:bg-slate-800 rounded-[70%_30%_30%_70%/70%_70%_30%_30%] shadow-xl shadow-blue-100/20 flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-accent text-3xl"
+                                    style="font-variation-settings: 'FILL' 1;">mail</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-1">SEND
+                                    US MAIL</h5>
+                                <p class="text-slate-500 dark:text-slate-400 text-lg">info@graficaemede.com.ar</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-20 h-20 bg-white dark:bg-slate-800 rounded-[30%_70%_50%_50%/50%_50%_70%_30%] shadow-xl shadow-blue-100/20 flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-accent text-3xl"
+                                    style="font-variation-settings: 'FILL' 1;">call</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-1">CALL
+                                    US</h5>
+                                <p class="text-slate-500 dark:text-slate-400 text-lg">+54 (11) 4567-8901</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+                            <span class="material-symbols-outlined text-white text-sm">print</span>
+                        </div>
+                        <span class="text-xl font-bold">Gráfica Emede</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Comprometidos con la excelencia en packaging y servicios gráficos industriales desde hace más de
+                        4 décadas.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-base">social_leaderboard</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-base">photo_camera</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <span class="material-symbols-outlined text-base">mail</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Empresa</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a class="hover:text-white transition-colors" href="#">Sobre Nosotros</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Nuestra Planta</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Maquinaria</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Sustentabilidad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Servicios</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a class="hover:text-white transition-colors" href="#">Estuches</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Prospectos</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Exhibidores</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Cajas Microcorrugado</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Contacto</h5>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex gap-3">
+                            <span class="material-symbols-outlined text-primary text-sm">location_on</span>
+                            Av. Industrial 1234, CABA, Argentina
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="material-symbols-outlined text-primary text-sm">phone</span>
+                            +54 (11) 4567-8901
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="material-symbols-outlined text-primary text-sm">email</span>
+                            info@graficaemede.com.ar
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
+                <p>© 2023 Gráfica Emede S.A. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-white" href="#">Política de Privacidad</a>
+                    <a class="hover:text-white" href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
