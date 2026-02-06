@@ -99,7 +99,7 @@ foreach ($sections as $s):
                             ?>
                             <div
                                 class="aspect-square rounded-2xl overflow-hidden bg-slate-100 flex items-center justify-center shadow-sm">
-                                <img alt="Packaging Gallery"
+                                <img alt="Soluciones gráficas y packaging personalizado - Gráfica Emede <?php echo $i - 1; ?>"
                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                     src="<?php echo $img_src; ?>" />
                             </div>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://emede.dydialabs.com/sitemap.xml

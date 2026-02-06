@@ -14,7 +14,79 @@ $page_hero = !empty($page_banners) ? $page_banners[0] : null;
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Gráfica Emede | <?php echo $page_data['title']; ?></title>
+    <title><?php
+    $seo_suffix = get_setting('seo_title_suffix', ' | Gráfica Emede');
+    echo !empty($page_data['meta_title']) ? $page_data['meta_title'] . $seo_suffix : 'Gráfica Emede | ' . $page_data['title'];
+    ?></title>
+
+    <meta name="description"
+        content="<?php echo htmlspecialchars($page_data['meta_description'] ?? get_setting('seo_default_description')); ?>">
+    <meta name="keywords"
+        content="<?php echo htmlspecialchars($page_data['meta_keywords'] ?? get_setting('seo_default_keywords')); ?>">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+        content="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>">
+    <meta property="og:title"
+        content="<?php echo htmlspecialchars($page_data['meta_title'] ?? $page_data['title']); ?>">
+    <meta property="og:description"
+        content="<?php echo htmlspecialchars($page_data['meta_description'] ?? get_setting('seo_default_description')); ?>">
+    <meta property="og:image"
+        content="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/"; ?><?php echo get_setting('og_image', 'media/og-image.jpg'); ?>">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title"
+        content="<?php echo htmlspecialchars($page_data['meta_title'] ?? $page_data['title']); ?>">
+    <meta property="twitter:description"
+        content="<?php echo htmlspecialchars($page_data['meta_description'] ?? get_setting('seo_default_description')); ?>">
+    <meta property="twitter:image"
+        content="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/"; ?><?php echo get_setting('og_image', 'media/og-image.jpg'); ?>">
+
+    <link rel="canonical"
+        href="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Gráfica Emede",
+      "image": "<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/"; ?><?php echo get_setting('site_logo', 'media/logo.png'); ?>",
+      "url": "<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/"; ?>",
+      "telephone": "<?php echo get_setting('contact_phone', '+54 11 4250-1234'); ?>",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Madame Curie 1141",
+        "addressLocality": "Quilmes",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "1878",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -34.7245, 
+        "longitude": -58.2520
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/graficaemede",
+        "https://www.instagram.com/graficaemede"
+      ]
+    }
+    </script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap"
         rel="stylesheet" />

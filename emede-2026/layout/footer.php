@@ -36,19 +36,19 @@
             <div>
                 <h5 class="font-bold mb-6">Empresa</h5>
                 <ul class="space-y-4 text-slate-400 text-sm">
-                    <li><a class="hover:text-white transition-colors" href="trayectoria.php">Sobre Nosotros</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Nuestra Planta</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Maquinaria</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Sustentabilidad</a></li>
+                    <li><a class="hover:text-white transition-colors" href="trayectoria">Sobre Nosotros</a></li>
+                    <li><a class="hover:text-white transition-colors" href="trayectoria">Nuestra Planta</a></li>
+                    <li><a class="hover:text-white transition-colors" href="trayectoria">Maquinaria</a></li>
+                    <li><a class="hover:text-white transition-colors" href="trayectoria">Sustentabilidad</a></li>
                 </ul>
             </div>
             <div>
                 <h5 class="font-bold mb-6">Servicios</h5>
                 <ul class="space-y-4 text-slate-400 text-sm">
-                    <li><a class="hover:text-white transition-colors" href="packaging.php">Estuches</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Prospectos</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Exhibidores</a></li>
-                    <li><a class="hover:text-white transition-colors" href="#">Cajas Microcorrugado</a></li>
+                    <li><a class="hover:text-white transition-colors" href="packaging">Estuches</a></li>
+                    <li><a class="hover:text-white transition-colors" href="packaging">Packaging e-commerce</a></li>
+                    <li><a class="hover:text-white transition-colors" href="posavasos">Posavasos Personalizados</a></li>
+                    <li><a class="hover:text-white transition-colors" href="comercial">Imprenta Comercial</a></li>
                 </ul>
             </div>
             <div>
@@ -71,7 +71,9 @@
         </div>
         <div
             class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
-            <p>© 2026 Gráfica Emede S.A. Todos los derechos reservados.</p>
+            <p>© <?php echo date('Y'); ?> Gráfica Emede S.A. Todos los derechos reservados. Especialistas en
+                <strong>Packaging personalizado</strong>, <strong>Posavasos para gastronomía</strong> y <strong>Gráfica
+                    industrial</strong>.</p>
             <div class="flex gap-6">
                 <a class="hover:text-white" href="#">Política de Privacidad</a>
                 <a class="hover:text-white" href="#">Términos y Condiciones</a>

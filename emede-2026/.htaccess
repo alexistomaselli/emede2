@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Redirect sitemap.xml to sitemap.php
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# Redirect /slug to slug.php if it exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L,QSA]
+
+# Fix for home if accessed via /home
+RewriteRule ^home$ index.php [L,R=301]
