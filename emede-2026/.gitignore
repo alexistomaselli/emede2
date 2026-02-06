@@ -1,8 +1,12 @@
 # Media and uploads
-website/media/
+media/
+uploads/
+!media/.gitkeep
+!uploads/.gitkeep
 
 # Database
-website/db/database.sqlite
+db/database.sqlite
+database.sqlite
 
 # System files
 .DS_Store
@@ -15,6 +19,11 @@ __pycache__/
 *.pyd
 
 # Seeds / Temp scripts
-website/db/seed_*.php
+db/seed_*.php
+db/update_*.php
 *.py
-!website/media/.gitkeep
+index.php.bak
+
+# Deploy ZIP
+deploy_emede.zip
+
